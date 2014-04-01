@@ -1,1 +1,1 @@
-execVM "grenadeStop.sqf";
+execVM "Scipts/grenadeStop.sqf";
