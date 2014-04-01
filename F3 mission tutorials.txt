@@ -2,3 +2,5 @@ ADVERSERIAL:
 http://ferstaberinde.com/f3/en//index.php?title=Tutorial:_Adversarial_Mission
 COOP:
 http://ferstaberinde.com/f3/en//index.php?title=Tutorial:_Cooperative_Mission
+
+These can guide you through the F3 framework options and capabilities.
