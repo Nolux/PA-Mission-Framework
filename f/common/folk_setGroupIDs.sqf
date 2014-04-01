@@ -12,16 +12,25 @@ if(!isnil "GrpNATO_ASL") then {GrpNATO_ASL setGroupId ["NATO ASL -","GroupColor0
 if(!isnil "GrpNATO_A1") then {GrpNATO_A1 setGroupId ["NATO A1 -","GroupColor0"];};
 if(!isnil "GrpNATO_A2") then {GrpNATO_A2 setGroupId ["NATO A2 -","GroupColor0"];};
 if(!isnil "GrpNATO_A3") then {GrpNATO_A3 setGroupId ["NATO A3 -","GroupColor0"];};
+if(!isnil "GrpNATO_A4") then {GrpNATO_A4 setGroupId ["NATO A4 -","GroupColor0"];};
 
 if(!isnil "GrpNATO_BSL") then {GrpNATO_BSL setGroupId ["NATO BSL -","GroupColor0"];};
 if(!isnil "GrpNATO_B1") then {GrpNATO_B1 setGroupId ["NATO B1 -","GroupColor0"];};
 if(!isnil "GrpNATO_B2") then {GrpNATO_B2 setGroupId ["NATO B2 -","GroupColor0"];};
 if(!isnil "GrpNATO_B3") then {GrpNATO_B3 setGroupId ["NATO B3 -","GroupColor0"];};
+if(!isnil "GrpNATO_B4") then {GrpNATO_B4 setGroupId ["NATO B4 -","GroupColor0"];};
 
 if(!isnil "GrpNATO_CSL") then {GrpNATO_CSL setGroupId ["NATO CSL -","GroupColor0"];};
 if(!isnil "GrpNATO_C1") then {GrpNATO_C1 setGroupId ["NATO C1 -","GroupColor0"];};
 if(!isnil "GrpNATO_C2") then {GrpNATO_C2 setGroupId ["NATO C2 -","GroupColor0"];};
 if(!isnil "GrpNATO_C3") then {GrpNATO_C3 setGroupId ["NATO C3 -","GroupColor0"];};
+if(!isnil "GrpNATO_C4") then {GrpNATO_C4 setGroupId ["NATO C4 -","GroupColor0"];};
+
+if(!isnil "GrpNATO_DSL") then {GrpNATO_DSL setGroupId ["NATO DSL -","GroupColor0"];};
+if(!isnil "GrpNATO_D1") then {GrpNATO_D1 setGroupId ["NATO D1 -","GroupColor0"];};
+if(!isnil "GrpNATO_D2") then {GrpNATO_D2 setGroupId ["NATO D2 -","GroupColor0"];};
+if(!isnil "GrpNATO_D3") then {GrpNATO_D3 setGroupId ["NATO D3 -","GroupColor0"];};
+if(!isnil "GrpNATO_D4") then {GrpNATO_D4 setGroupId ["NATO D4 -","GroupColor0"];};
 
 if(!isnil "GrpNATO_MMG1") then {GrpNATO_MMG1 setGroupId ["NATO MMG1 -","GroupColor0"];};
 if(!isnil "GrpNATO_MAT1") then {GrpNATO_MAT1 setGroupId ["NATO MAT1 -","GroupColor0"];};
@@ -232,4 +241,3 @@ if(!isnil "GrpAAF_JIP") then {GrpAAF_JIP setGroupId ["AAF JIP -","GroupColor0"];
 // =====================================================================================
 
 if (true) exitWith {};
-
