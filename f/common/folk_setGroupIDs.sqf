@@ -3,66 +3,119 @@
 // ====================================================================================
 
 // GROUP IDs: BLUFOR > NATO
-// Automatically assigns intelligible names to groups
+// Automatically assigns intelligible names to groups for chat
 
-if(!isnil "GrpNATO_CO") then {GrpNATO_CO setGroupId ["NATO CO -","GroupColor0"];};
-if(!isnil "GrpNATO_DC") then {GrpNATO_DC setGroupId ["NATO DC -","GroupColor0"];};
+//INF
+if(!isnil "GrpNATO_CO") then {GrpNATO_CO setGroupId ["PLT CO -","GroupColor0"];};
+if(!isnil "GrpNATO_DC") then {GrpNATO_DC setGroupId ["PLT XO -","GroupColor0"];};	//Should probably be a spec marker
 
-if(!isnil "GrpNATO_ASL") then {GrpNATO_ASL setGroupId ["NATO ASL -","GroupColor0"];};
-if(!isnil "GrpNATO_A1") then {GrpNATO_A1 setGroupId ["NATO A1 -","GroupColor0"];};
-if(!isnil "GrpNATO_A2") then {GrpNATO_A2 setGroupId ["NATO A2 -","GroupColor0"];};
-if(!isnil "GrpNATO_A3") then {GrpNATO_A3 setGroupId ["NATO A3 -","GroupColor0"];};
-if(!isnil "GrpNATO_A4") then {GrpNATO_A4 setGroupId ["NATO A4 -","GroupColor0"];};
+if(!isnil "GrpNATO_ASL") then {GrpNATO_ASL setGroupId ["ASL -","GroupColor0"];};
+if(!isnil "GrpNATO_A1") then {GrpNATO_A1 setGroupId ["A1 -","GroupColor0"];};
+if(!isnil "GrpNATO_A2") then {GrpNATO_A2 setGroupId ["A2 -","GroupColor0"];};
+if(!isnil "GrpNATO_A3") then {GrpNATO_A3 setGroupId ["A3 -","GroupColor0"];};
+if(!isnil "GrpNATO_A4") then {GrpNATO_A4 setGroupId ["A4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_BSL") then {GrpNATO_BSL setGroupId ["NATO BSL -","GroupColor0"];};
-if(!isnil "GrpNATO_B1") then {GrpNATO_B1 setGroupId ["NATO B1 -","GroupColor0"];};
-if(!isnil "GrpNATO_B2") then {GrpNATO_B2 setGroupId ["NATO B2 -","GroupColor0"];};
-if(!isnil "GrpNATO_B3") then {GrpNATO_B3 setGroupId ["NATO B3 -","GroupColor0"];};
-if(!isnil "GrpNATO_B4") then {GrpNATO_B4 setGroupId ["NATO B4 -","GroupColor0"];};
+if(!isnil "GrpNATO_BSL") then {GrpNATO_BSL setGroupId ["BSL -","GroupColor0"];};
+if(!isnil "GrpNATO_B1") then {GrpNATO_B1 setGroupId ["B1 -","GroupColor0"];};
+if(!isnil "GrpNATO_B2") then {GrpNATO_B2 setGroupId ["B2 -","GroupColor0"];};
+if(!isnil "GrpNATO_B3") then {GrpNATO_B3 setGroupId ["B3 -","GroupColor0"];};
+if(!isnil "GrpNATO_B4") then {GrpNATO_B4 setGroupId ["B4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_CSL") then {GrpNATO_CSL setGroupId ["NATO CSL -","GroupColor0"];};
-if(!isnil "GrpNATO_C1") then {GrpNATO_C1 setGroupId ["NATO C1 -","GroupColor0"];};
-if(!isnil "GrpNATO_C2") then {GrpNATO_C2 setGroupId ["NATO C2 -","GroupColor0"];};
-if(!isnil "GrpNATO_C3") then {GrpNATO_C3 setGroupId ["NATO C3 -","GroupColor0"];};
-if(!isnil "GrpNATO_C4") then {GrpNATO_C4 setGroupId ["NATO C4 -","GroupColor0"];};
+if(!isnil "GrpNATO_CSL") then {GrpNATO_CSL setGroupId ["CSL -","GroupColor0"];};
+if(!isnil "GrpNATO_C1") then {GrpNATO_C1 setGroupId ["C1 -","GroupColor0"];};
+if(!isnil "GrpNATO_C2") then {GrpNATO_C2 setGroupId ["C2 -","GroupColor0"];};
+if(!isnil "GrpNATO_C3") then {GrpNATO_C3 setGroupId ["C3 -","GroupColor0"];};
+if(!isnil "GrpNATO_C4") then {GrpNATO_C4 setGroupId ["C4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_DSL") then {GrpNATO_DSL setGroupId ["NATO DSL -","GroupColor0"];};
-if(!isnil "GrpNATO_D1") then {GrpNATO_D1 setGroupId ["NATO D1 -","GroupColor0"];};
-if(!isnil "GrpNATO_D2") then {GrpNATO_D2 setGroupId ["NATO D2 -","GroupColor0"];};
-if(!isnil "GrpNATO_D3") then {GrpNATO_D3 setGroupId ["NATO D3 -","GroupColor0"];};
-if(!isnil "GrpNATO_D4") then {GrpNATO_D4 setGroupId ["NATO D4 -","GroupColor0"];};
+if(!isnil "GrpNATO_DSL") then {GrpNATO_DSL setGroupId ["DSL -","GroupColor0"];};
+if(!isnil "GrpNATO_D1") then {GrpNATO_D1 setGroupId ["D1 -","GroupColor0"];};
+if(!isnil "GrpNATO_D2") then {GrpNATO_D2 setGroupId ["D2 -","GroupColor0"];};
+if(!isnil "GrpNATO_D3") then {GrpNATO_D3 setGroupId ["D3 -","GroupColor0"];};
+if(!isnil "GrpNATO_D4") then {GrpNATO_D4 setGroupId ["D4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_MMG1") then {GrpNATO_MMG1 setGroupId ["NATO MMG1 -","GroupColor0"];};
-if(!isnil "GrpNATO_MAT1") then {GrpNATO_MAT1 setGroupId ["NATO MAT1 -","GroupColor0"];};
-if(!isnil "GrpNATO_ENG1") then {GrpNATO_ENG1 setGroupId ["NATO ENG1 -","GroupColor0"];};
+//WEAP
+if(!isnil "GrpNATO_MMG1") then {GrpNATO_MMG1 setGroupId ["MMG1 -","GroupColor0"];};
+if(!isnil "GrpNATO_MMG2") then {GrpNATO_MMG2 setGroupId ["MMG2 -","GroupColor0"];};
+if(!isnil "GrpNATO_MMG3") then {GrpNATO_MMG3 setGroupId ["MMG3 -","GroupColor0"];};
+if(!isnil "GrpNATO_MMG4") then {GrpNATO_MMG4 setGroupId ["MMG4 -","GroupColor0"];};
+if(!isnil "GrpNATO_MAT1") then {GrpNATO_MAT1 setGroupId ["MAT1 -","GroupColor0"];};
+if(!isnil "GrpNATO_MAT2") then {GrpNATO_MAT2 setGroupId ["MAT2 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_ST1") then {GrpNATO_ST1 setGroupId ["NATO ST1 -","GroupColor0"];};
-if(!isnil "GrpNATO_HMG1") then {GrpNATO_HMG1 setGroupId ["NATO HMG1 -","GroupColor0"];};
-if(!isnil "GrpNATO_MTR1") then {GrpNATO_MTR1 setGroupId ["NATO MTR1 -","GroupColor0"];};
-if(!isnil "GrpNATO_HAT1") then {GrpNATO_HAT1 setGroupId ["NATO GrpNATO_HAT1 -","GroupColor0"];};
+//AUX
+if(!isnil "GrpNATO_AUX") then {GrpNATO_AUX setGroupId ["AUX","GroupColor0"];};
+if(!isnil "GrpNATO_LOG") then {GrpNATO_LOG setGroupId ["LOG","GroupColor0"];};
 
-if(!isnil "GrpNATO_IFV1") then {GrpNATO_IFV1 setGroupId ["NATO IFV1 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV2") then {GrpNATO_IFV2 setGroupId ["NATO IFV2 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV3") then {GrpNATO_IFV3 setGroupId ["NATO IFV3 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV4") then {GrpNATO_IFV4 setGroupId ["NATO IFV4 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV5") then {GrpNATO_IFV5 setGroupId ["NATO IFV5 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV6") then {GrpNATO_IFV6 setGroupId ["NATO IFV6 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV7") then {GrpNATO_IFV7 setGroupId ["NATO IFV7 -","GroupColor0"];};
-if(!isnil "GrpNATO_IFV8") then {GrpNATO_IFV8 setGroupId ["NATO IFV8 -","GroupColor0"];};
+//WEAP2
+if(!isnil "GrpNATO_ST1") then {GrpNATO_ST1 setGroupId ["ST1 -","GroupColor0"];};
+if(!isnil "GrpNATO_ST2") then {GrpNATO_ST2 setGroupId ["ST2 -","GroupColor0"];};
+if(!isnil "GrpNATO_ST3") then {GrpNATO_ST3 setGroupId ["ST3 -","GroupColor0"];};
+if(!isnil "GrpNATO_ST4") then {GrpNATO_ST4 setGroupId ["ST4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_TNK1") then {GrpNATO_TNK1 setGroupId ["NATO TNK1 -","GroupColor0"];};
+if(!isnil "GrpNATO_HMG1") then {GrpNATO_HMG1 setGroupId ["HMG1 -","GroupColor0"];};
+if(!isnil "GrpNATO_HMG2") then {GrpNATO_HMG2 setGroupId ["HMG2 -","GroupColor0"];};
+if(!isnil "GrpNATO_HMG3") then {GrpNATO_HMG3 setGroupId ["HMG3 -","GroupColor0"];};
+if(!isnil "GrpNATO_HMG4") then {GrpNATO_HMG4 setGroupId ["HMG4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_TH1") then {GrpNATO_TH1 setGroupId ["NATO TH1 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH2") then {GrpNATO_TH2 setGroupId ["NATO TH2 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH3") then {GrpNATO_TH3 setGroupId ["NATO TH3 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH4") then {GrpNATO_TH4 setGroupId ["NATO TH4 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH5") then {GrpNATO_TH5 setGroupId ["NATO TH5 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH6") then {GrpNATO_TH6 setGroupId ["NATO TH6 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH7") then {GrpNATO_TH7 setGroupId ["NATO TH7 -","GroupColor0"];};
-if(!isnil "GrpNATO_TH8") then {GrpNATO_TH8 setGroupId ["NATO TH8 -","GroupColor0"];};
+if(!isnil "GrpNATO_MTR1") then {GrpNATO_MTR1 setGroupId ["MTR1 -","GroupColor0"];};
+if(!isnil "GrpNATO_MTR2") then {GrpNATO_MTR2 setGroupId ["MTR2 -","GroupColor0"];};
+if(!isnil "GrpNATO_MTR3") then {GrpNATO_MTR3 setGroupId ["MTR3 -","GroupColor0"];};
+if(!isnil "GrpNATO_MTR4") then {GrpNATO_MTR4 setGroupId ["MTR4 -","GroupColor0"];};
 
-if(!isnil "GrpNATO_AH1") then {GrpNATO_AH1 setGroupId ["NATO AH1 -","GroupColor0"];};
+if(!isnil "GrpNATO_HAT1") then {GrpNATO_HAT1 setGroupId ["NATO GrpNATO_HAT1 -","GroupColor0"];}; //unused?
 
+if(!isnil "GrpNATO_IFV1") then {GrpNATO_IFV1 setGroupId ["IFV1 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV2") then {GrpNATO_IFV2 setGroupId ["IFV2 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV3") then {GrpNATO_IFV3 setGroupId ["IFV3 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV4") then {GrpNATO_IFV4 setGroupId ["IFV4 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV5") then {GrpNATO_IFV5 setGroupId ["IFV5 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV6") then {GrpNATO_IFV6 setGroupId ["IFV6 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV7") then {GrpNATO_IFV7 setGroupId ["IFV7 -","GroupColor0"];};
+if(!isnil "GrpNATO_IFV8") then {GrpNATO_IFV8 setGroupId ["IFV8 -","GroupColor0"];};
+
+//ARMOR
+if(!isnil "GrpNATO_T1") then {GrpNATO_T1 setGroupId ["TANGO 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_T2") then {GrpNATO_T2 setGroupId ["TANGO 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_T3") then {GrpNATO_T3 setGroupId ["TANGO 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_W1") then {GrpNATO_W1 setGroupId ["WHISKY 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_W2") then {GrpNATO_W2 setGroupId ["WHISKY 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_W3") then {GrpNATO_W3 setGroupId ["WHISKY 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_Z1") then {GrpNATO_Z1 setGroupId ["ZULU 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_Z2") then {GrpNATO_Z2 setGroupId ["ZULU 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_Z3") then {GrpNATO_Z3 setGroupId ["ZULU 3 -","GroupColor0"];};
+
+//TRANS
+if(!isnil "GrpNATO_TH1") then {GrpNATO_TH1 setGroupId ["TH1 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH2") then {GrpNATO_TH2 setGroupId ["TH2 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH3") then {GrpNATO_TH3 setGroupId ["TH3 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH4") then {GrpNATO_TH4 setGroupId ["TH4 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH5") then {GrpNATO_TH5 setGroupId ["TH5 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH6") then {GrpNATO_TH6 setGroupId ["TH6 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH7") then {GrpNATO_TH7 setGroupId ["TH7 -","GroupColor0"];};
+if(!isnil "GrpNATO_TH8") then {GrpNATO_TH8 setGroupId ["TH8 -","GroupColor0"];};
+//MEDEVAC
+if(!isnil "GrpNATO_MH1") then {GrpNATO_MH1 setGroupId ["BANDAID 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_MH2") then {GrpNATO_MH2 setGroupId ["BANDAID 2 -","GroupColor0"];};
+
+//CAS
+if(!isnil "GrpNATO_REA1") then {GrpNATO_REA1 setGroupId ["REAPER 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_REA2") then {GrpNATO_REA2 setGroupId ["REAPER 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_REA3") then {GrpNATO_REA3 setGroupId ["REAPER 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_KNI1") then {GrpNATO_KNI1 setGroupId ["KNIGHT 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_KNI2") then {GrpNATO_KNI2 setGroupId ["KNIGHT 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_KNI3") then {GrpNATO_KNI3 setGroupId ["KNIGHT 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_SCO1") then {GrpNATO_SCO1 setGroupId ["SCOUT 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_SCO2") then {GrpNATO_SCO2 setGroupId ["SCOUT 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_SCO3") then {GrpNATO_SCO3 setGroupId ["SCOUT 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_SWO1") then {GrpNATO_SWO1 setGroupId ["SWORD 1 -","GroupColor0"];};
+if(!isnil "GrpNATO_SWO2") then {GrpNATO_SWO2 setGroupId ["SWORD 2 -","GroupColor0"];};
+if(!isnil "GrpNATO_SWO3") then {GrpNATO_SWO3 setGroupId ["SWORD 3 -","GroupColor0"];};
+if(!isnil "GrpNATO_PAV") then {GrpNATO_PAV setGroupId ["PAVEMENT -","GroupColor0"];};
+if(!isnil "GrpNATO_BAR") then {GrpNATO_BAR setGroupId ["BARON -","GroupColor0"];};
+if(!isnil "GrpNATO_RAP") then {GrpNATO_RAP setGroupId ["RAPTOR -","GroupColor0"];};
+if(!isnil "GrpNATO_PHO") then {GrpNATO_PHO setGroupId ["PHOENIX -","GroupColor0"];};
+if(!isnil "GrpNATO_THU") then {GrpNATO_THU setGroupId ["THUNDERBIRD -","GroupColor0"];};
+
+//DIVER
 if(!isnil "GrpNATO_DT1") then {GrpNATO_DT1 setGroupId ["NATO DT1 -","GroupColor0"];};
 
 if(!isnil "GrpNATO_JIP") then {GrpNATO_JIP setGroupId ["NATO JIP -","GroupColor0"];};

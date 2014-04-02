@@ -71,7 +71,7 @@ Weapon teams are generally attached at squad level but carry their own callsigns
 Sniper teams are almost never attached at squad level.
 
 #=======================================#
-#			Armor Platoon				#
+#			Armor Division				#
 #=======================================#
 case 7
 
@@ -91,7 +91,7 @@ They can either be attached individually to infantry squads or operate on their 
 If all three divisions are on the field they are commanded by Tango 1,  then Whisky 1, then Zulu 1, then Tango 2 etc.
 
 #=======================================#
-#			Air Platoon					#
+#			Air Division				#
 #=======================================#
 case 8 (possible new case for CAS Plane?)
 
@@ -131,7 +131,7 @@ Callsigns:
 	> Reaper	(APACHE)
 	> Knight	(VENOM)
 	> Scout		(PAWNEE)
-	> Whisky	
+	> Sword	
 
 All CAS Choppers of the same kind fall under the same callsign.
 	> For example if there are 2 Apache's and one Pawnee they will go Reaper (1,2) and Scout 1.
