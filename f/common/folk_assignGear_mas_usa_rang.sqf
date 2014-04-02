@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - NATO
+// F3 - Folk Assign Gear Script - mas_usa_rang - USSOCOM 75th RANGER
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -57,13 +57,13 @@ _carbine_attach = ["acc_flashlight","optic_Aco"];
 _smg = "arifle_mas_mp5";
 _smgmag = "30Rnd_mas_9x21_Stanag";
 _smgmag_tr = "30Rnd_mas_9x21_Stanag";
-_smg_attach = nil;
+_smg_attach = [];
 
 // Diver
 _diverWep = "arifle_SDAR_F";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
-_diverWep_attach = nil;
+_diverWep_attach = [];
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "arifle_mas_m16_gl";
@@ -117,33 +117,33 @@ _bagmediumdiver =  "B_AssaultPack_blk";	// used by divers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "LMG_mas_M249_F";
+_ARmag = "200Rnd_mas_556x45_Stanag";
+_ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
 _AR_attach = ["acc_flashlight","optic_ACO"];
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "LMG_mas_Mk48_F";
+_MMGmag = "100Rnd_mas_762x51_Stanag";
+_MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
 _MMG_attach = ["acc_flashlight","optic_ACO"];
 
 // Rifleman AT
-_RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RAT = "mas_launch_M136_F";
+_RATmag = "mas_M136";
 
 // Mortar
 _MTR = "B_Mk6Mortar_Wpn";
 _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
-_MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
-_MATmag2 = "NLAW_F";
+_MAT = "mas_launch_maaws_F";
+_MATmag1 = "mas_MAAWS";
+_MATmag2 = "mas_MAAWS";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "mas_launch_Stinger_F";
+_SAMmag = "mas_Stinger";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -214,8 +214,8 @@ _unit unassignItem _nvg;
 _unit removeItem _nvg;
 };
 
-_unit addItem _nvg;
-_unit assignItem _nvg;					// add universal NVG for this faction
+//_unit addItem _nvg;
+//_unit assignItem _nvg;					// add universal NVG for this faction
 
 //removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 //unit addItem "ItemGPS"; 					// add gps to this faction
@@ -264,8 +264,9 @@ _backpack = {
 				_unit addmagazines [_glriflemag,2];
 				_unit addmagazines [_glmag,1];
 				_unit addmagazines [_glsmokewhite,1];
-				_unit addmagazines [_grenade,1];_unit addmagazines [_mgrenade,1];
-				_unit addmagazines [_smokegrenade,1];
+				_unit addmagazines [_grenade,1];
+				_unit addmagazines [_mgrenade,1];
+				_unit addmagazines [_glflarewhite,1];
 			};
 			// BACKPACK: LIGHT
 			if (f_param_backpacks == 1) then {
@@ -273,7 +274,8 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 1];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,1];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
@@ -284,7 +286,8 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 6];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 4];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 4];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
