@@ -44,17 +44,17 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-if (side _unit == west) {
+//if (side _unit == west) {
 _radio1 = "tf_rt1523g"; //longrange WEST
-};
+//};
 
-if (side _unit == east) {
-_radio1 = "tf_mr3000"; //longrange EAST
-};
+//if (side _unit == east) {
+//_radio1 = "tf_mr3000"; //longrange EAST
+//};
 
-if (!(side _unit == west) && !(side _unit == east)) {
-_radio1 = "tf_anprc155"; //longrange GUER
-};
+//if (!(side _unit == west) && !(side _unit == east)) {
+//_radio1 = "tf_anprc155"; //longrange GUER
+//};
 
 _radio2 = "itemRadio";  //shortrange
 
@@ -62,7 +62,7 @@ _radio2 = "itemRadio";  //shortrange
 // ====================================================================================
 
 // INTERPRET PASSED VARIABLES
-// The following inrerprets formats what has been passed to this script element
+// The following interprets formats what has been passed to this script element
 
 _typeofUnit = toLower (_this select 0);			// Tidy input for SWITCH/CASE statements, expecting something like : r = Rifleman, co = Commanding Officer, rat = Rifleman (AT)
 _unit = _this select 1;					// expecting name of unit; originally passed by using 'this' in unit init
@@ -82,25 +82,29 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 
@@ -125,7 +129,8 @@ switch (_typeofUnit) do
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER
 	case "samg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
@@ -137,7 +142,8 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG GUNNER
 	case "mmgg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -149,7 +155,8 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
@@ -161,7 +168,8 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
@@ -173,7 +181,8 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
@@ -185,7 +194,8 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
@@ -197,7 +207,8 @@ switch (_typeofUnit) do
 // LOADOUT: SNIPER
 	case "sn":
 	{
-		_unit addItem _radio1;
+		_unit removeBackpack;
+		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: SPOTTER
@@ -210,7 +221,8 @@ switch (_typeofUnit) do
 	case "c":
 	{
 		if(leader group _unit == _unit) then {
-				_unit addItem _radio1;
+				_unit removeBackpack;
+				_unit addBackpack _radio1;
 			};
 	};
 
@@ -218,7 +230,8 @@ switch (_typeofUnit) do
 	case "p":
 	{
 		if(leader group _unit == _unit) then {
-				_unit addItem _radio1;
+				_unit removeBackpack;
+				_unit addBackpack _radio1;
 			};
 	};
 
@@ -226,7 +239,8 @@ switch (_typeofUnit) do
 	case "eng":
 	{
 		if(leader group _unit == _unit) then {
-				_unit addItem _radio1;
+				_unit removeBackpack;
+				_unit addBackpack _radio1;
 			};
 	};
 
@@ -280,7 +294,7 @@ switch (_typeofUnit) do
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
    {
-		//_unit addItem _radio1;
+		//_unit addBackpack _radio1;
 		if (true) exitwith {player globalchat format ["DEBUG (f\common\folk_assignGear_acre.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 

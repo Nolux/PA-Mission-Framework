@@ -476,6 +476,7 @@ _backpack = {
 		{
 			// NO BACKPACK
 			if (f_param_backpacks == 0) then {
+					if (_useTFR == 1) then {
 				_unit addmagazines [_MMGmag,1];
 				_unit addmagazines [_grenade,1];_unit addmagazines [_mgrenade,1];
 				_unit addmagazines [_smokegrenade,1];
