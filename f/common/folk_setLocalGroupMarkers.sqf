@@ -32,6 +32,7 @@ switch (_unitfaction) do
 
 // MARKERS: BLUFOR > NATO
 // Markers seen by players in NATO slots.
+// ["Group assigned in init line", case, text next to marker on map, colour]
 
 	case "blu_f":
 	{
