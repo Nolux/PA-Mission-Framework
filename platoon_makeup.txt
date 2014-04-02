@@ -118,7 +118,7 @@ Callsigns:
 	> Star		(LITTLEBIRD)
 	> Cobra		(VENOM)
 	> Dustoff
-	> Big Bird
+	> Big Bird	(CHINOOK)
 	> Pelican	(CHINOOK)
 	> Bandaid	(MEDEVAC)	NOTE: Commanded directly by PltMED.
 
