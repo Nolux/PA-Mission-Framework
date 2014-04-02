@@ -264,8 +264,9 @@ _backpack = {
 				_unit addmagazines [_glriflemag,2];
 				_unit addmagazines [_glmag,1];
 				_unit addmagazines [_glsmokewhite,1];
-				_unit addmagazines [_grenade,1];_unit addmagazines [_mgrenade,1];
-				_unit addmagazines [_smokegrenade,1];
+				_unit addmagazines [_grenade,1];
+				_unit addmagazines [_mgrenade,1];
+				_unit addmagazines [_glflarewhite,1];
 			};
 			// BACKPACK: LIGHT
 			if (f_param_backpacks == 1) then {
@@ -273,7 +274,8 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 1];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,1];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
@@ -284,7 +286,8 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 6];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 4];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 4];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
