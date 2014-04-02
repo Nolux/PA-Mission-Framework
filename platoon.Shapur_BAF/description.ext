@@ -119,6 +119,23 @@ class Params
 
 // ============================================================================================
 
+// PA - TFR SUpport
+// Credits: Please bugger Nolux of PA with any questions you have.
+// EXPERIMENTAL FEATURE
+// WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
+// AS "paramsarray select 3" FOR GEAR SCRIPTS TO WORK CORRECTLY
+
+		class f_param_tfr
+{
+				title = "TFR";
+				values[] = {0,1};
+				texts[] = {"Off","On"};
+				default = 0;
+				code = "f_var_tfr = %1";
+};
+
+//=============================================================================================
+
 // F3 - Mission Timer/Safe Start
 
         class f_param_mission_timer

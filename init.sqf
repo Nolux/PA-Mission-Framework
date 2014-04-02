@@ -64,7 +64,7 @@ f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
 // F3 - Fireteam Member Markers
 // Shows the unit in your group in the map to create situational awareness.
 // Sometimes useful in Urban environments.
-// We leave it generally disabled.
+// We leave it generally disabled because we use the ST mod.
 
 // [] spawn f_fnc_SetLocalFTMemberMarkers;
 
@@ -236,7 +236,7 @@ f_endSelected = -1;
 // F3 - AI Unit Caching
 // http://ferstaberinde.com/f3/en//index.php?title=AI_Caching
 // The real magic of the F3 framework.
-// Make sure mission is settled in _n seconds, where _n below should be replaced by that number in seconds. 
+// Make sure mission is settled in _n seconds, where _n below should be replaced by that number in seconds.
 // i.e. "[30] spawn f_fnc_cInit;"
 
 [_n] spawn f_fnc_cInit;
@@ -259,3 +259,7 @@ f_endSelected = -1;
 	{
 		player addItem "x39_morphine";
 	};
+
+// Comment this out if you want to use standard TFR LR radio settings.
+// Comment out the TFR part in description.ext
+tf_no_auto_long_range_radio = true

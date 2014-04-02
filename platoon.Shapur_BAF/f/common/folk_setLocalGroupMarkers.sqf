@@ -69,7 +69,7 @@ switch (_unitfaction) do
 		["GrpNATO_MMG2", 2, "MMG2", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_MMG3", 2, "MMG3", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_MMG4", 2, "MMG4", "ColorOrange"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker; //Are we using this?
+		["GrpNATO_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_MAT2", 3, "MAT2", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker; //Sniper Team
 		["GrpNATO_ST2",  4, "ST2", "ColorOrange"] spawn f_fnc_localGroupMarker; //Sniper Team
@@ -83,7 +83,6 @@ switch (_unitfaction) do
 		["GrpNATO_MTR2",  5, "MTR2", "ColorOrange"] spawn f_fnc_localGroupMarker; //Mortar Team
 		["GrpNATO_MTR3",  5, "MTR3", "ColorOrange"] spawn f_fnc_localGroupMarker; //Mortar Team
 		["GrpNATO_MTR4",  5, "MTR4", "ColorOrange"] spawn f_fnc_localGroupMarker; //Mortar Team
-		["GrpNATO_HAT1",  3, "HAT1", "ColorOrange"] spawn f_fnc_localGroupMarker; //Are we using this?
 		["GrpNATO_SAM1",  3, "SAM1", "ColorOrange"] spawn f_fnc_localGroupMarker; //AA Team
 		["GrpNATO_SAM2",  3, "SAM2", "ColorOrange"] spawn f_fnc_localGroupMarker; //AA Team
 		["GrpNATO_SAM3",  3, "SAM3", "ColorOrange"] spawn f_fnc_localGroupMarker; //AA Team
@@ -107,12 +106,12 @@ switch (_unitfaction) do
  		["GrpNATO_T1",  7, "TANGO1", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_T2",  7, "TANGO2", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_T3",  7, "TANGO3", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W1",  7, "WHISKY1", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W2",  7, "WHISKY2", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W3",  7, "WHISKY3", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_Z1",  7, "ZULU1", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_Z2",  7, "ZULU2", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_Z3",  7, "ZULU3", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W1",  7, "WHISKY1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W2",  7, "WHISKY2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W3",  7, "WHISKY3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_Z1",  7, "ZULU1", "ColorGreen"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_Z2",  7, "ZULU2", "ColorGreen"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_Z3",  7, "ZULU3", "ColorGreen"] spawn f_fnc_localGroupMarker;
 
  		// Air Division, Transport Helicopters, callsigns not assigned to marker.
 		["GrpNATO_TH1",  8, "TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -121,30 +120,30 @@ switch (_unitfaction) do
  		["GrpNATO_TH4",  8, "TH4", "ColorBlue"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_TH5",  8, "TH5", "ColorGreen"] spawn f_fnc_localGroupMarker;
   		["GrpNATO_TH6",  8, "TH6", "ColorGreen"] spawn f_fnc_localGroupMarker;
-  		["GrpNATO_TH7",  8, "TH7", "ColorGreen"] spawn f_fnc_localGroupMarker;
-  		["GrpNATO_TH8",  8, "TH8", "ColorGreen"] spawn f_fnc_localGroupMarker;
+  		["GrpNATO_TH7",  8, "TH7", "ColorBlack"] spawn f_fnc_localGroupMarker;
+  		["GrpNATO_TH8",  8, "TH8", "ColorBlack"] spawn f_fnc_localGroupMarker;
   		// MEDEVAC chopper
-   		["GrpNATO_MH1",  8, "BANDAID1", "ColorOrange"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_MH2",  8, "BANDAID2", "ColorOrange"] spawn f_fnc_localGroupMarker;
+   		["GrpNATO_MH1",  8, "BANDAID1", "ColorBlack"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_MH2",  8, "BANDAID2", "ColorBlack"] spawn f_fnc_localGroupMarker;
 
 		// Air Division, CAS
-		["GrpNATO_REA1",  8, "REAPER1", "ColorRed"] spawn f_fnc_localGroupMarker;	//REAPER
-		["GrpNATO_REA2",  8, "REAPER2", "ColorRed"] spawn f_fnc_localGroupMarker;	//REAPER
-		["GrpNATO_REA3",  8, "REAPER3", "ColorRed"] spawn f_fnc_localGroupMarker;	//REAPER
-		["GrpNATO_KNI1",  8, "KNIGHT1", "ColorRed"] spawn f_fnc_localGroupMarker;	//KNIGHT
-		["GrpNATO_KNI2",  8, "KNIGHT2", "ColorRed"] spawn f_fnc_localGroupMarker;	//KNIGHT
-		["GrpNATO_KNI3",  8, "KNIGHT3", "ColorRed"] spawn f_fnc_localGroupMarker;	//KNIGHT
-		["GrpNATO_SCO1",  8, "SCOUT1", "ColorRed"] spawn f_fnc_localGroupMarker;	//SCOUT
-		["GrpNATO_SCO2",  8, "SCOUT2", "ColorRed"] spawn f_fnc_localGroupMarker;	//SCOUT
-		["GrpNATO_SCO3",  8, "SCOUT3", "ColorRed"] spawn f_fnc_localGroupMarker;	//SCOUT
-		["GrpNATO_SWO1",  8, "SWORD1", "ColorRed"] spawn f_fnc_localGroupMarker;	//SWORD
-		["GrpNATO_SWO2",  8, "SWORD2", "ColorRed"] spawn f_fnc_localGroupMarker;	//SWORD
-		["GrpNATO_SWO3",  8, "SWORD3", "ColorRed"] spawn f_fnc_localGroupMarker;	//SWORD
-		["GrpNATO_PAV",  8, "PAVEMENT", "ColorRed"] spawn f_fnc_localGroupMarker;	//PAVEMENT
-		["GrpNATO_BAR",  8, "BARON", "ColorRed"] spawn f_fnc_localGroupMarker;	//BARON
-		["GrpNATO_RAP",  8, "RAPTOR", "ColorRed"] spawn f_fnc_localGroupMarker;	//RAPTOR
-		["GrpNATO_PHO",  8, "PHOENIX", "ColorRed"] spawn f_fnc_localGroupMarker;	//PHOENIX
-		["GrpNATO_THU",  8, "THUNDERBIRD", "ColorRed"] spawn f_fnc_localGroupMarker;	//THUNDERBIRD
+		["GrpNATO_REA1",  8, "REAPER1", "ColorBlue"] spawn f_fnc_localGroupMarker;		//REAPER
+		["GrpNATO_REA2",  8, "REAPER2", "ColorBlue"] spawn f_fnc_localGroupMarker;		//REAPER
+		["GrpNATO_REA3",  8, "REAPER3", "ColorBlue"] spawn f_fnc_localGroupMarker;		//REAPER
+		["GrpNATO_KNI1",  8, "KNIGHT1", "ColorRed"] spawn f_fnc_localGroupMarker;		//KNIGHT
+		["GrpNATO_KNI2",  8, "KNIGHT2", "ColorRed"] spawn f_fnc_localGroupMarker;		//KNIGHT
+		["GrpNATO_KNI3",  8, "KNIGHT3", "ColorRed"] spawn f_fnc_localGroupMarker;		//KNIGHT
+		["GrpNATO_SCO1",  8, "SCOUT1", "ColorBlue"] spawn f_fnc_localGroupMarker;		//SCOUT
+		["GrpNATO_SCO2",  8, "SCOUT2", "ColorBlue"] spawn f_fnc_localGroupMarker;		//SCOUT
+		["GrpNATO_SCO3",  8, "SCOUT3", "ColorBlue"] spawn f_fnc_localGroupMarker;		//SCOUT
+		["GrpNATO_SWO1",  8, "SWORD1", "ColorRed"] spawn f_fnc_localGroupMarker;		//SWORD
+		["GrpNATO_SWO2",  8, "SWORD2", "ColorRed"] spawn f_fnc_localGroupMarker;		//SWORD
+		["GrpNATO_SWO3",  8, "SWORD3", "ColorRed"] spawn f_fnc_localGroupMarker;		//SWORD
+		["GrpNATO_PAV",  8, "PAVEMENT", "ColorBlue"] spawn f_fnc_localGroupMarker;		//PAVEMENT
+		["GrpNATO_BAR",  8, "BARON", "ColorBlue"] spawn f_fnc_localGroupMarker;			//BARON
+		["GrpNATO_RAP",  8, "RAPTOR", "ColorBlue"] spawn f_fnc_localGroupMarker;		//RAPTOR
+		["GrpNATO_PHO",  8, "PHOENIX", "ColorBlue"] spawn f_fnc_localGroupMarker;		//PHOENIX
+		["GrpNATO_THU",  8, "THUNDERBIRD", "ColorBlue"] spawn f_fnc_localGroupMarker;	//THUNDERBIRD
 
 		// Divers
 		["GrpNATO_DT1",  4, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;

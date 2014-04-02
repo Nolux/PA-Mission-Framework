@@ -8,10 +8,10 @@ if(!isDedicated) then
 	//display hint while timer is active
 	while {pv_mission_timer > 0;} do
 	{
-		hintsilent format ["SAFE START\nTime Remaining: %1 min(s)\n", pv_mission_timer];
+		hintsilent format ["WEAPONS COLD\nTime Remaining: %1 min(s)\n", pv_mission_timer];
 		sleep 5;
 	};
-	
+
 	//display hint after mission is started
-	hint "SAFE START\nMission starting now";
+	hint "MISSION START\nYou are now weapons free";
 };

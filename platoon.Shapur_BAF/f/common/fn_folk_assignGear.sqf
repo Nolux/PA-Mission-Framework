@@ -107,6 +107,17 @@ if (_useACRE == 1) then {
 	_this execVM "f\common\fa_ACRE_assignGear.sqf";
 };
 // ====================================================================================
+// GEAR: TFR
+// The following block of code executes only if the TFR parameter is set to true; it
+// automatically includes a file which contains the appropiate equipment data.
+
+_useTFR = paramsarray select 3;
+
+if (_useTFR == 1) then {
+	_this execVM "f\common\fa_TFR_assignGear.sqf";
+};
+
+// ====================================================================================
 
 // DEBUG
 
