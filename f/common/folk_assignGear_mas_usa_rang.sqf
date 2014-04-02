@@ -57,13 +57,13 @@ _carbine_attach = ["acc_flashlight","optic_Aco"];
 _smg = "arifle_mas_mp5";
 _smgmag = "30Rnd_mas_9x21_Stanag";
 _smgmag_tr = "30Rnd_mas_9x21_Stanag";
-_smg_attach = nil;
+_smg_attach = [];
 
 // Diver
 _diverWep = "arifle_SDAR_F";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
-_diverWep_attach = nil;
+_diverWep_attach = [];
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "arifle_mas_m16_gl";
@@ -214,8 +214,8 @@ _unit unassignItem _nvg;
 _unit removeItem _nvg;
 };
 
-_unit addItem _nvg;
-_unit assignItem _nvg;					// add universal NVG for this faction
+//_unit addItem _nvg;
+//_unit assignItem _nvg;					// add universal NVG for this faction
 
 //removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 //unit addItem "ItemGPS"; 					// add gps to this faction
