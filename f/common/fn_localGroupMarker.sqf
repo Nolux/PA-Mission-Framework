@@ -81,7 +81,7 @@ if (isnil "_grp") then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};
-// Fireteam
+// Fireteam and Squad Lead
 			case 1:
 			{
 				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
