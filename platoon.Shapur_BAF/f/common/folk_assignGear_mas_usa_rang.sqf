@@ -93,7 +93,7 @@ _Mgrenade = "MiniGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
-// Misc medical items.
+// misc medical items.
 _firstaid = "x39_bandage";
 _medkit = "x39_medikit";
 

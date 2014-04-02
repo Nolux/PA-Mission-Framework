@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - mas_usa_rang - USSOCOM 75th RANGER
+// F3 - Folk Assign Gear Script - NATO
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -39,36 +39,36 @@
 // Attachments
 // nil = no change
 // [] = remove all
-// ["acc_flashlight","optic_ACO_grn"] = remove all, add items.
+// ["acc_pointer_IR","optic_ACO_grn"] = remove all, add items.
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_mas_m16";
-_riflemag = "30Rnd_mas_556x45_Stanag";
-_riflemag_tr = "30Rnd_mas_556x45_T_Stanag";
+_rifle = "arifle_MX_F";
+_riflemag = "30Rnd_65x39_caseless_mag";
+_riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 _rifle_attach = ["acc_flashlight","optic_Aco"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_mas_m16";
-_carbinemag = "30Rnd_mas_556x45_Stanag";
-_carbinemag_tr = "30Rnd_mas_556x45_T_Stanag";
+_carbine = "arifle_MXC_F";
+_carbinemag = "30Rnd_65x39_caseless_mag";
+_carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 _carbine_attach = ["acc_flashlight","optic_Aco"];
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "arifle_mas_mp5";
-_smgmag = "30Rnd_mas_9x21_Stanag";
-_smgmag_tr = "30Rnd_mas_9x21_Stanag";
-_smg_attach = [];
+_smg = "SMG_01_F";
+_smgmag = "30Rnd_45ACP_Mag_SMG_01";
+_smgmag_tr = "30Rnd_45ACP_Mag_SMG_01_tracer_green";
+_smg_attach = nil;
 
 // Diver
 _diverWep = "arifle_SDAR_F";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
-_diverWep_attach = [];
+_diverWep_attach = nil;
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_mas_m16_gl";
-_glriflemag = "30Rnd_mas_556x45_Stanag";
-_glriflemag_tr = "30Rnd_mas_556x45_T_Stanag";
+_glrifle = "arifle_MX_GL_F";
+_glriflemag = "30Rnd_65x39_caseless_mag";
+_glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 _glmag = "1Rnd_HE_Grenade_shell";
 _glrifle_attach = ["acc_flashlight","optic_Aco"];
 
@@ -84,8 +84,8 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_mas_m9_F";
-_pistolmag = "16Rnd_mas_9x21_Mag";
+_pistol = "hgun_P07_F";
+_pistolmag = "16Rnd_9x21_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
@@ -93,9 +93,9 @@ _Mgrenade = "MiniGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
-// Misc medical items.
-_firstaid = "x39_bandage";
-_medkit = "x39_medikit";
+// misc medical items.
+_firstaid = "FirstAidKit";
+_medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
 _nvg = "NVGoggles";
@@ -117,33 +117,33 @@ _bagmediumdiver =  "B_AssaultPack_blk";	// used by divers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_mas_M249_F";
-_ARmag = "200Rnd_mas_556x45_Stanag";
-_ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
+_AR = "arifle_MX_SW_F";
+_ARmag = "100Rnd_65x39_caseless_mag";
+_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
 _AR_attach = ["acc_flashlight","optic_ACO"];
 
 // Medium MG
-_MMG = "LMG_mas_Mk48_F";
-_MMGmag = "100Rnd_mas_762x51_Stanag";
-_MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
+_MMG = "LMG_Zafir_F";
+_MMGmag = "150Rnd_762x51_Box";
+_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 _MMG_attach = ["acc_flashlight","optic_ACO"];
 
 // Rifleman AT
-_RAT = "mas_launch_M136_F";
-_RATmag = "mas_M136";
+_RAT = "launch_NLAW_F";
+_RATmag = "NLAW_F";
 
 // Mortar
 _MTR = "B_Mk6Mortar_Wpn";
 _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
-_MAT = "mas_launch_maaws_F";
-_MATmag1 = "mas_MAAWS";
-_MATmag2 = "mas_MAAWS";
+_MAT = "launch_NLAW_F";
+_MATmag1 = "NLAW_F";
+_MATmag2 = "NLAW_F";
 
 // Surface Air
-_SAM = "mas_launch_Stinger_F";
-_SAMmag = "mas_Stinger";
+_SAM = "launch_B_Titan_F";
+_SAMmag = "Titan_AA";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -214,8 +214,8 @@ _unit unassignItem _nvg;
 _unit removeItem _nvg;
 };
 
-//_unit addItem _nvg;
-//_unit assignItem _nvg;					// add universal NVG for this faction
+_unit addItem _nvg;
+_unit assignItem _nvg;					// add universal NVG for this faction
 
 //removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 //unit addItem "ItemGPS"; 					// add gps to this faction
@@ -264,9 +264,8 @@ _backpack = {
 				_unit addmagazines [_glriflemag,2];
 				_unit addmagazines [_glmag,1];
 				_unit addmagazines [_glsmokewhite,1];
-				_unit addmagazines [_grenade,1];
-				_unit addmagazines [_mgrenade,1];
-				_unit addmagazines [_glflarewhite,1];
+				_unit addmagazines [_grenade,1];_unit addmagazines [_mgrenade,1];
+				_unit addmagazines [_smokegrenade,1];
 			};
 			// BACKPACK: LIGHT
 			if (f_param_backpacks == 1) then {
@@ -274,8 +273,7 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 1];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,1];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
@@ -286,8 +284,7 @@ _backpack = {
 				clearMagazineCargoGlobal (unitBackpack _unit);
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 6];
 				(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 4];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
-				(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
