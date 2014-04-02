@@ -111,7 +111,7 @@ if (isnil "_grp") then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};
-// Sniper Team
+// Sniper Team and Diver Team
 			case 4:
 			{
 				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
@@ -131,7 +131,7 @@ if (isnil "_grp") then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};
-// Engineers
+// Engineers, AUX and LOG
 			case 6:
 			{
 				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
@@ -151,7 +151,7 @@ if (isnil "_grp") then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};
-// Transport and Attack Helos
+// Transport and Attack Helos, Planes
 			case 8:
 			{
 				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
@@ -189,5 +189,3 @@ if (isnil "_grp") then
 // ====================================================================================
 
 if (true) exitWith {};
-
-

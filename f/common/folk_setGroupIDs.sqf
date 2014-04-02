@@ -7,7 +7,7 @@
 
 //INF
 if(!isnil "GrpNATO_CO") then {GrpNATO_CO setGroupId ["PLT CO -","GroupColor0"];};
-if(!isnil "GrpNATO_DC") then {GrpNATO_DC setGroupId ["PLT XO -","GroupColor0"];};	//Should probably be a spec marker
+if(!isnil "GrpNATO_DC") then {GrpNATO_DC setGroupId ["PLT XO -","GroupColor0"];};	//Should probably be a spec marker?
 
 if(!isnil "GrpNATO_ASL") then {GrpNATO_ASL setGroupId ["ASL -","GroupColor0"];};
 if(!isnil "GrpNATO_A1") then {GrpNATO_A1 setGroupId ["A1 -","GroupColor0"];};

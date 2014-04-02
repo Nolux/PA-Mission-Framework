@@ -15,7 +15,7 @@
 case 0
 
 > CO
-> XO
+> XO		NOTE: Needs specialist marker?
 > PltMED	NOTE: specialist case 0
 
 CO is in overall active command during mission. 
@@ -41,7 +41,7 @@ Callsigns:
 	> Alpha
 	> Bravo
 	> Charlie
-	> Delta
+	> Delta		NOTE: Delta is if dictated the specialist squad.
 
 A squad is made up out of:
 
@@ -66,9 +66,10 @@ Callsigns:
 	> Mortar Team
 	> AA Team
 	> Sniper Team
+	> Diver Team
 
 Weapon teams are generally attached at squad level but carry their own callsigns. Generally directed by a Squad Leader but Platoon Command can command them directly if the situation calls for it.
-Sniper teams are almost never attached at squad level.
+Sniper teams are almost never attached at squad level as are Diver teams.
 
 #=======================================#
 #			Armor Division				#
