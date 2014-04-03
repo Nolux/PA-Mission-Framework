@@ -71,7 +71,7 @@ _radio1 = "tf_rt1523g"; //longrange WEST
 };
 */
 
-_radio1 = "tf_rt1523g"; // NLUFOR radio
+_radio1 = "tf_rt1523g"; // BLUFOR radio
 _radio2 = "itemRadio";  //shortrange
 
 
