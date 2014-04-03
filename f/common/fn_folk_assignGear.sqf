@@ -58,6 +58,11 @@ if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _u
 if(isServer) then
 {
 // ====================================================================================
+// Check for TFR
+
+_useTFR = paramsarray select 3;
+
+//=====================================================================================
 
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the player is in a NATO slot; it
@@ -65,6 +70,11 @@ if(isServer) then
 
 if (_faction == "BLU_F") then {
 #include "folk_assignGear_nato.sqf"
+
+	if (_useTFR) then {
+   _this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -75,6 +85,11 @@ if (_faction == "BLU_F") then {
 
 if (_faction == "BLU_G_F") then {
 #include "folk_assignGear_fia.sqf"
+
+/*	if (_useTFR) then {
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf"
+	};
+*/
 };
 
 // ====================================================================================
@@ -85,6 +100,11 @@ if (_faction == "BLU_G_F") then {
 
 if (_faction == "OPF_F") then {
 #include "folk_assignGear_csat.sqf"
+
+/*	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf"
+	};
+*/
 };
 
 // ====================================================================================
@@ -95,12 +115,33 @@ if (_faction == "OPF_F") then {
 
 if(_faction == "IND_F") then {
 #include "folk_assignGear_aaf.sqf";
+
+/*	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf"
+	};
+*/
+};
+
+// ====================================================================================
+
+// GEAR: BLUFOR > Rangers
+//The following block of code executes only if the player is in a Ranger slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if(_faction == "mas_usa_rang") then {
+#include "folk_assignGear_mas_usa_rang.sqf";
+/*
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf"
+	};
+*/
 };
 
 // ====================================================================================
 // GEAR: ACRE
 // The following block of code executes only if the ACRE parameter is set to true; it
 // automatically includes a file which contains the appropriate equipment data.
+
 _useACRE = paramsArray select 2;
 
 if (_useACRE == 1) then {
@@ -110,13 +151,13 @@ if (_useACRE == 1) then {
 // GEAR: TFR
 // The following block of code executes only if the TFR parameter is set to true; it
 // automatically includes a file which contains the appropiate equipment data.
-
+/*
 _useTFR = paramsarray select 3;
 
 if (_useTFR == 1) then {
 	_this execVM "f\common\fa_TFR_assignGear.sqf";
 };
-
+*/
 // ====================================================================================
 
 // DEBUG

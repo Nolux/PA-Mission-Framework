@@ -800,7 +800,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_AUX_E3";
-					init="GrpNATO_AUX = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_AUX = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="AUX Team 1 Engineer 3";
 				};
 				class Item4
@@ -811,7 +811,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_AUX_E4";
-					init="GrpNATO_AUX = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_AUX = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="AUX Team 1 Engineer 4";
 				};
 				class Item5
@@ -822,7 +822,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_AUX_E5";
-					init="GrpNATO_AUX = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_AUX = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="AUX Team 1 Engineer 5";
 				};
 			};
@@ -2289,7 +2289,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_LOG_E3";
-					init="GrpNATO_LOG = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_LOG = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="LOG Team 1 Engineer 3";
 				};
 				class Item4
@@ -2300,7 +2300,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_LOG_E4";
-					init="GrpNATO_LOG = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_LOG = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="LOG Team 1 Engineer 4";
 				};
 				class Item5
@@ -2311,7 +2311,7 @@ class Mission
 					vehicle="B_engineer_F";
 					skill=0.60000002;
 					text="UnitNATO_LOG_E5";
-					init="GrpNATO_LOG = group this; nul = [""engm"",this] call f_fnc_folk_assignGear ;";
+					init="GrpNATO_LOG = group this; nul = [""eng"",this] call f_fnc_folk_assignGear ;";
 					description="LOG Team 1 Engineer 5";
 				};
 			};
