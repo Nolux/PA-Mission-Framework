@@ -44,8 +44,10 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-_radio1 = "tf_mr3000"; // BLUFOR radio
-_radio2 = "itemRadio";  //shortrange
+//sleep 5;
+_radio1 = "tf_mr3000"; // OPFOR radio
+_radio2 = "itemRadio";  // shortrange
+hint "TFR AssignGear Loaded.";
 
 // ====================================================================================
 
@@ -70,28 +72,28 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
@@ -99,112 +101,112 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER
 	case "samg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: MEDIUM MG GUNNER
 	case "mmgg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: SNIPER
 	case "sn":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
@@ -218,7 +220,7 @@ switch (_typeofUnit) do
 	case "c":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -227,7 +229,7 @@ switch (_typeofUnit) do
 	case "p":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -236,7 +238,7 @@ switch (_typeofUnit) do
 	case "eng":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -244,7 +246,7 @@ switch (_typeofUnit) do
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
@@ -254,7 +256,7 @@ switch (_typeofUnit) do
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
@@ -264,7 +266,7 @@ switch (_typeofUnit) do
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
@@ -274,7 +276,7 @@ switch (_typeofUnit) do
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit removeItem _radio2;
+		_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
