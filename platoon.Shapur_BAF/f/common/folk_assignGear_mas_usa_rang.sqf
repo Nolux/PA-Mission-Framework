@@ -42,13 +42,13 @@
 // ["acc_flashlight","optic_ACO_grn"] = remove all, add items.
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_mas_m16";
+_rifle = "arifle_mas_m4";
 _riflemag = "30Rnd_mas_556x45_Stanag";
 _riflemag_tr = "30Rnd_mas_556x45_T_Stanag";
 _rifle_attach = ["acc_flashlight","optic_Aco"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_mas_m16";
+_carbine = "arifle_mas_m4";
 _carbinemag = "30Rnd_mas_556x45_Stanag";
 _carbinemag_tr = "30Rnd_mas_556x45_T_Stanag";
 _carbine_attach = ["acc_flashlight","optic_Aco"];
@@ -66,7 +66,7 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 _diverWep_attach = [];
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_mas_m16_gl";
+_glrifle = "arifle_mas_m4_gl";
 _glriflemag = "30Rnd_mas_556x45_Stanag";
 _glriflemag_tr = "30Rnd_mas_556x45_T_Stanag";
 _glmag = "1Rnd_HE_Grenade_shell";
