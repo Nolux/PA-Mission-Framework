@@ -66,7 +66,7 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 _diverWep_attach = [];
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_mas_m16_gl";
+_glrifle = "arifle_mas_m4_gl";
 _glriflemag = "30Rnd_mas_556x45_Stanag";
 _glriflemag_tr = "30Rnd_mas_556x45_T_Stanag";
 _glmag = "1Rnd_HE_Grenade_shell";
