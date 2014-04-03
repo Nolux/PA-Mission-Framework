@@ -72,7 +72,7 @@ if (_faction == "BLU_F") then {
 #include "folk_assignGear_nato.sqf"
 
 	if (_useTFR == 1) then {
-		_#include "f\common\fa_TFR_assignGear_WEST.sqf"
+		_#include "fa_TFR_assignGear_WEST.sqf"
 	};
 
 };

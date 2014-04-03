@@ -47,6 +47,8 @@
 _radio1 = "tf_rt1523g"; // BLUFOR radio
 _radio2 = "itemRadio";  //shortrange
 
+hint "check";
+
 // ====================================================================================
 
 // INTERPRET PASSED VARIABLES
