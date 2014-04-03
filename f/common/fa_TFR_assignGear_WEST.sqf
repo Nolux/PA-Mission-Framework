@@ -44,36 +44,8 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-// This doesn't work... Why?
-/*
-if (_faction == "BLU_F") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-
-if (_faction == "BLU_G_F") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-
-if (_faction == "OPF_F") then {
-_radio1 = "tf_mr3000"; //longrange EAST
-};
-
-if (_faction == "mas_rus_spet") then {
-_radio1 = "tf_mr3000"; //longrange EAST
-};
-
-if(_faction == "IND_F") then {
-_radio1 = "tf_anprc155"; //longrange GUER
-};
-
-if(_faction == "mas_usa_rang") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-*/
-
 _radio1 = "tf_rt1523g"; // BLUFOR radio
 _radio2 = "itemRadio";  //shortrange
-
 
 // ====================================================================================
 

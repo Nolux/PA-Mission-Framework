@@ -65,6 +65,12 @@ if(isServer) then
 
 if (_faction == "BLU_F") then {
 #include "folk_assignGear_nato.sqf"
+_useTFR = paramsarray select 3;
+
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -75,6 +81,12 @@ if (_faction == "BLU_F") then {
 
 if (_faction == "BLU_G_F") then {
 #include "folk_assignGear_fia.sqf"
+_useTFR = paramsarray select 3;
+
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -85,6 +97,12 @@ if (_faction == "BLU_G_F") then {
 
 if (_faction == "OPF_F") then {
 #include "folk_assignGear_csat.sqf"
+_useTFR = paramsarray select 3;
+
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -95,6 +113,12 @@ if (_faction == "OPF_F") then {
 
 if(_faction == "IND_F") then {
 #include "folk_assignGear_aaf.sqf";
+_useTFR = paramsarray select 3;
+
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -105,6 +129,12 @@ if(_faction == "IND_F") then {
 
 if(_faction == "mas_usa_rang") then {
 #include "folk_assignGear_mas_usa_rang.sqf";
+_useTFR = paramsarray select 3;
+
+	if (_useTFR == 1) then {
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+	};
+
 };
 
 // ====================================================================================
@@ -121,13 +151,13 @@ if (_useACRE == 1) then {
 // GEAR: TFR
 // The following block of code executes only if the TFR parameter is set to true; it
 // automatically includes a file which contains the appropiate equipment data.
-
+/*
 _useTFR = paramsarray select 3;
 
 if (_useTFR == 1) then {
 	_this execVM "f\common\fa_TFR_assignGear.sqf";
 };
-
+*/
 // ====================================================================================
 
 // DEBUG
