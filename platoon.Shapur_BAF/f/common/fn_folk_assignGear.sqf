@@ -98,6 +98,16 @@ if(_faction == "IND_F") then {
 };
 
 // ====================================================================================
+
+// GEAR: BLUFOR > Rangers
+//The following block of code executes only if the player is in a Ranger slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if(_faction == "mas_usa_rang") then {
+#include "folk_assignGear_mas_usa_rang.sqf";
+};
+
+// ====================================================================================
 // GEAR: ACRE
 // The following block of code executes only if the ACRE parameter is set to true; it
 // automatically includes a file which contains the appropriate equipment data.

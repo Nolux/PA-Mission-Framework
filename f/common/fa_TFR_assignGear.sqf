@@ -44,18 +44,34 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-//if (side _unit == west) {
+// This doesn't work... Why?
+/*
+if (_faction == "BLU_F") then {
 _radio1 = "tf_rt1523g"; //longrange WEST
-//};
+};
 
-//if (side _unit == east) {
-//_radio1 = "tf_mr3000"; //longrange EAST
-//};
+if (_faction == "BLU_G_F") then {
+_radio1 = "tf_rt1523g"; //longrange WEST
+};
 
-//if (!(side _unit == west) && !(side _unit == east)) {
-//_radio1 = "tf_anprc155"; //longrange GUER
-//};
+if (_faction == "OPF_F") then {
+_radio1 = "tf_mr3000"; //longrange EAST
+};
 
+if (_faction == "mas_rus_spet") then {
+_radio1 = "tf_mr3000"; //longrange EAST
+};
+
+if(_faction == "IND_F") then {
+_radio1 = "tf_anprc155"; //longrange GUER
+};
+
+if(_faction == "mas_usa_rang") then {
+_radio1 = "tf_rt1523g"; //longrange WEST
+};
+*/
+
+_radio1 = "tf_rt1523g"; // NLUFOR radio
 _radio2 = "itemRadio";  //shortrange
 
 
@@ -111,18 +127,21 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -136,6 +155,7 @@ switch (_typeofUnit) do
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -149,6 +169,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -162,6 +183,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -175,6 +197,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -188,6 +211,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -201,6 +225,7 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
+		_unit removeItem _radio2;
 		//_unit addItem _radio2;
 	};
 
@@ -247,24 +272,40 @@ switch (_typeofUnit) do
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
+		_unit removeItem _radio2;
+		if(leader group _unit == _unit) then {
+				_unit addItem _radio2;
+			};
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: CARABINEER
 	case "car":
 	{
+		_unit removeItem _radio2;
+		if(leader group _unit == _unit) then {
+				_unit addItem _radio2;
+			};
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
+		_unit removeItem _radio2;
+		if(leader group _unit == _unit) then {
+				_unit addItem _radio2;
+			};
 		//_unit addItem _radio2;
 	};
 
 // LOADOUT: GRENADIER
 	case "gren":
 	{
+		_unit removeItem _radio2;
+		if(leader group _unit == _unit) then {
+				_unit addItem _radio2;
+			};
 		//_unit addItem _radio2;
 	};
 
