@@ -58,6 +58,11 @@ if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _u
 if(isServer) then
 {
 // ====================================================================================
+// Check for TFR
+
+_useTFR = paramsarray select 3;
+
+//=====================================================================================
 
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the player is in a NATO slot; it
@@ -65,10 +70,9 @@ if(isServer) then
 
 if (_faction == "BLU_F") then {
 #include "folk_assignGear_nato.sqf"
-_useTFR = paramsarray select 3;
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+		_#include "f\common\fa_TFR_assignGear_WEST.sqf"
 	};
 
 };
@@ -81,10 +85,9 @@ _useTFR = paramsarray select 3;
 
 if (_faction == "BLU_G_F") then {
 #include "folk_assignGear_fia.sqf"
-_useTFR = paramsarray select 3;
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+		#include "fa_TFR_assignGear_WEST.sqf"
 	};
 
 };
@@ -97,10 +100,9 @@ _useTFR = paramsarray select 3;
 
 if (_faction == "OPF_F") then {
 #include "folk_assignGear_csat.sqf"
-_useTFR = paramsarray select 3;
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf";
+		#include "fa_TFR_assignGear_EAST.sqf"
 	};
 
 };
@@ -113,10 +115,9 @@ _useTFR = paramsarray select 3;
 
 if(_faction == "IND_F") then {
 #include "folk_assignGear_aaf.sqf";
-_useTFR = paramsarray select 3;
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf";
+		#include "fa_TFR_assignGear_GUER.sqf"
 	};
 
 };
@@ -129,10 +130,9 @@ _useTFR = paramsarray select 3;
 
 if(_faction == "mas_usa_rang") then {
 #include "folk_assignGear_mas_usa_rang.sqf";
-_useTFR = paramsarray select 3;
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
+		#include "fa_TFR_assignGear_WEST.sqf"
 	};
 
 };
