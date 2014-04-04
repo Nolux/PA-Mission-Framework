@@ -3,9 +3,9 @@
 #====================#
 
 This is the PA version of the Folk ARPS F3 framework.
-At the moment it will be heavily stripped down.
-Folder will be included for different unit loadouts in different settings.
-And maybe eventually ready made platoons that you can copy into the mission.sqm file.
+It is currently being heavily modified.
+A folder with one standard platoon structure is available.
+Added many more markers to accomodate CAS, ARMOR, MEDEVAC and WEAPONS teams.
 
 This file will eventually contain a list of files that need editing for each mission,
 in order to set the mission information and other conditional settings.
