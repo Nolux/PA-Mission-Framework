@@ -1,0 +1,2 @@
+Very advanced AI behaviour script: Has the possibility to simulate a very smart
+enemy force. Might com at the cost of FPS, needs some testing?

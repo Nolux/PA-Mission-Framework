@@ -37,8 +37,8 @@ switch (_unitfaction) do
 	case "blu_f":
 	{
 		//Infantry Platoon
-		["GrpNATO_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_DC", 0, "XO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_CO", 0, "PltCO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_DC", 0, "PltXO", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpNATO_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -544,6 +544,10 @@ switch (_unitfaction) do
 		["UNITAAF_DSL_M", 0, "DM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 	};
 
+// ====================================================================================
+
+// MARKERS: BLUFOR > RANGERS
+// Markers seen by players in RANGER slots.
 
 	case "mas_usa_rang":
 	{
