@@ -1,0 +1,2 @@
+Smaller script, use this when you don't want the Ai groups to be very smart. 
+Simulate a more disorganized enemy force and gain FPS by doing so.
