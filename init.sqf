@@ -261,7 +261,7 @@ f_endSelected = -1;
 	};
 
 //Load IgiLoad Script
-null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
+//null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
 
 // Comment this out if you want to use standard TFR LR radio settings.
 // Comment out the TFR part in description.ext
