@@ -69,7 +69,7 @@ _useTFR = paramsarray select 3;
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "BLU_F") then {
-#include "folk_assignGear_nato.sqf"
+#include "folk_assignGear_nato.sqf";
 
 	if (_useTFR == 1) then {
    _this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
@@ -84,10 +84,10 @@ if (_faction == "BLU_F") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "BLU_G_F") then {
-#include "folk_assignGear_fia.sqf"
+#include "folk_assignGear_fia.sqf";
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf"
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
 	};
 
 };
@@ -99,10 +99,10 @@ if (_faction == "BLU_G_F") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "OPF_F") then {
-#include "folk_assignGear_csat.sqf"
+#include "folk_assignGear_csat.sqf";
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf"
+		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf";
 	};
 
 };
@@ -117,7 +117,7 @@ if(_faction == "IND_F") then {
 #include "folk_assignGear_aaf.sqf";
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf"
+		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf";
 	};
 
 };
@@ -132,7 +132,7 @@ if(_faction == "mas_usa_rang") then {
 #include "folk_assignGear_mas_usa_rang.sqf";
 
 	if (_useTFR == 1) then {
-		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf"
+		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
 	};
 
 };
