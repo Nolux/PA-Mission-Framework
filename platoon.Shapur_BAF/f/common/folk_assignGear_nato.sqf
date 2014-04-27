@@ -210,8 +210,8 @@ _unit addItem _firstaid;
 
 if(_nvg in (assignedItems _unit)) then
 {
-_unit unassignItem _nvg;
-_unit removeItem _nvg;
+_unit unlinkItem _nvg;
+
 };
 
 _unit addItem _nvg;

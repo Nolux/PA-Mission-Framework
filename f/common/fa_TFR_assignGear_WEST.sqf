@@ -101,50 +101,45 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER
 	case "samg":
 	{
-		removeBackpack _unit;
-		_unit addBackpack _radio1;
+		//removeBackpack _unit;
+		//_unit addBackpack _radio1;
 	};
 
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MEDIUM MG GUNNER
 	case "mmgg":
 	{
-		removeBackpack _unit;
-		_unit addBackpack _radio1;
+		//removeBackpack _unit;
+		//_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: HEAVY MG GUNNER
@@ -157,8 +152,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -171,8 +165,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: HEAVY AT GUNNER
@@ -185,8 +178,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -199,8 +191,7 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		_unit removeWeapon _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: SNIPER
@@ -213,7 +204,7 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		//_unit addItem _radio2;
+		_unit addItem _radio2;
 	};
 
 // LOADOUT: GROUND VEHICLE CREW
@@ -246,62 +237,58 @@ switch (_typeofUnit) do
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
-		_unit removeWeapon _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		_unit removeWeapon _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit removeWeapon _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit removeWeapon _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
 	{
-		//_unit addItemCargoGlobal [_radio1, 1];
+		_unit addItemCargoGlobal [_radio1, 1];
 	};
 
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
 	case "v_tr":
 	{
-		//_unit addItemCargoGlobal [_radio2, 4];
-		//_unit addItemCargoGlobal [_radio1, 4];
+		_unit addItemCargoGlobal [_radio2, 4];
+		_unit addItemCargoGlobal [_radio1, 4];
 
 	};
 
 // CARGO: IFV - room for 10 weapons and 100 cargo items
 	case "v_ifv":
 	{
-		//_unit addItemCargoGlobal [_radio2, 2];
-		//_unit addItemCargoGlobal [_radio1, 2];
+		_unit addItemCargoGlobal [_radio2, 2];
+		_unit addItemCargoGlobal [_radio1, 2];
 
 	};
 

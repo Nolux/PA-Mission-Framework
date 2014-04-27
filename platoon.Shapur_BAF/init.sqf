@@ -259,10 +259,15 @@ f_endSelected = -1;
 	{
 		player addItem "x39_morphine";
 	};
+	for [{_i=0}, {_i<1}, {_i=_i+1}] dp
+	{
+		player addItem "x39_earplugs";
+	};
+}
 
 //Load IgiLoad Script
-null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
+//null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
 
 // Comment this out if you want to use standard TFR LR radio settings.
 // Comment out the TFR part in description.ext
-tf_no_auto_long_range_radio = true
+//tf_no_auto_long_range_radio = false
