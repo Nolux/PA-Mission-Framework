@@ -51,7 +51,7 @@ enableDebugConsole = 1;
 respawn = 1;
 // Respawn delay in seconds. 300 is 5 minutes.
 respawndelay = 0;
-respawnTemplates[] = {"f_Spectator"};
+respawnTemplates[] = {"f_Spectator"};	// Comment out if respawn != 1
 
 // ============================================================================================
 

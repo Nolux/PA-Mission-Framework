@@ -194,10 +194,10 @@ f_endSelected = -1;
 // Is there a way to enable this only at mission start?
 // It seems unnecessary once mission has started.
 
-// f_showGroup_Nametags = true;			// Display unit's group (uses GroupID)
-// f_showDistance_Nametags = true;	// Show distance to player
-// f_showVehicle_Nametags = true;		// Show vehicle player is in
-// [20] execVM "f\common\f_nametags.sqf";
+ f_showGroup_Nametags = true;			// Display unit's group (uses GroupID)
+ f_showDistance_Nametags = true;	// Show distance to player
+ f_showVehicle_Nametags = true;		// Show vehicle player is in
+ [20] execVM "f\common\f_nametags.sqf";
 
 // ====================================================================================
 
@@ -236,10 +236,10 @@ f_endSelected = -1;
 // F3 - AI Unit Caching
 // http://ferstaberinde.com/f3/en//index.php?title=AI_Caching
 // The real magic of the F3 framework.
-// Make sure mission is settled in _n seconds, where _n below should be replaced by that number in seconds.
+// Make sure mission is settled in n seconds, where '20' below should be replaced by that number in seconds.
 // i.e. "[30] spawn f_fnc_cInit;"
 
-[_n] spawn f_fnc_cInit;
+[20] spawn f_fnc_cInit;
 
 // Feed all units medical items for xMed.
 
@@ -268,6 +268,4 @@ f_endSelected = -1;
 //Load IgiLoad Script
 //null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
 
-// Comment this out if you want to use standard TFR LR radio settings.
-// Comment out the TFR part in description.ext
-//tf_no_auto_long_range_radio = false
+// tf_no_auto_long_range_radio = false
