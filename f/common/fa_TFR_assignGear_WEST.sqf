@@ -44,46 +44,10 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-if (_faction == "BLU_F") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-
-if (_faction == "BLU_G_F") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-
-if (_faction == "OPF_F") then {
-_radio1 = "tf_mr3000"; //longrange EAST
-};
-
-if (_faction == "mas_rus_spet") then {
-_radio1 = "tf_mr3000"; //longrange EAST
-};
-
-if(_faction == "IND_F") then {
-_radio1 = "tf_anprc155"; //longrange GUER
-};
-
-if(_faction == "mas_usa_rang") then {
-_radio1 = "tf_rt1523g"; //longrange WEST
-};
-
-// This doesnt work for some reason. Find another way to check faction / side in F3.
-
-//if (side (group _unit) == west) {
-//_radio1 = "tf_rt1523g"; //longrange WEST
-//};
-
-//if (side _unit == east) {
-//_radio1 = "tf_mr3000"; //longrange EAST
-//};
-
-//if (!(side _unit == west) && !(side _unit == east)) {
-//_radio1 = "tf_anprc155"; //longrange GUER
-//};
-
-_radio2 = "itemRadio";  //shortrange
-
+//sleep 5;
+_radio1 = "tf_rt1523g"; // BLUFOR radio
+_radio2 = "itemRadio";  // shortrange
+hint "TFR AssignGear Loaded.";
 
 // ====================================================================================
 
@@ -108,28 +72,28 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
@@ -137,126 +101,117 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER
 	case "samg":
 	{
-		_unit removeBackpack;
-		_unit addBackpack _radio1;
+		//removeBackpack _unit;
+		//_unit addBackpack _radio1;
 	};
 
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MEDIUM MG GUNNER
 	case "mmgg":
 	{
-		_unit removeBackpack;
-		_unit addBackpack _radio1;
+		//removeBackpack _unit;
+		//_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		_unit removeItem _radio2;
-		//_unit addItem _radio2;
+		//_unit removeWeapon _radio2;
 	};
 
 // LOADOUT: SNIPER
 	case "sn":
 	{
-		_unit removeBackpack;
+		removeBackpack _unit;
 		_unit addBackpack _radio1;
 	};
 
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		//_unit addItem _radio2;
+		_unit addItem _radio2;
 	};
 
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -265,7 +220,7 @@ switch (_typeofUnit) do
 	case "p":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -274,7 +229,7 @@ switch (_typeofUnit) do
 	case "eng":
 	{
 		if(leader group _unit == _unit) then {
-				_unit removeBackpack;
+				removeBackpack _unit;
 				_unit addBackpack _radio1;
 			};
 	};
@@ -282,62 +237,58 @@ switch (_typeofUnit) do
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
-		_unit removeItem _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		_unit removeItem _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit removeItem _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit removeItem _radio2;
+		//_unit removeWeapon _radio2;
 		if(leader group _unit == _unit) then {
 				_unit addItem _radio2;
 			};
-		//_unit addItem _radio2;
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
 	{
-		//_unit addItemCargoGlobal [_radio1, 1];
+		_unit addItemCargoGlobal [_radio1, 1];
 	};
 
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
 	case "v_tr":
 	{
-		//_unit addItemCargoGlobal [_radio2, 4];
-		//_unit addItemCargoGlobal [_radio1, 4];
+		_unit addItemCargoGlobal [_radio2, 4];
+		_unit addItemCargoGlobal [_radio1, 4];
 
 	};
 
 // CARGO: IFV - room for 10 weapons and 100 cargo items
 	case "v_ifv":
 	{
-		//_unit addItemCargoGlobal [_radio2, 2];
-		//_unit addItemCargoGlobal [_radio1, 2];
+		_unit addItemCargoGlobal [_radio2, 2];
+		_unit addItemCargoGlobal [_radio1, 2];
 
 	};
 

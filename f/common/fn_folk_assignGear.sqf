@@ -59,9 +59,9 @@ if(isServer) then
 {
 // ====================================================================================
 // Check for TFR
-/*
+
 _useTFR = paramsarray select 3;
-*/
+
 //=====================================================================================
 
 // GEAR: BLUFOR > NATO
@@ -70,11 +70,11 @@ _useTFR = paramsarray select 3;
 
 if (_faction == "BLU_F") then {
 #include "folk_assignGear_nato.sqf";
-/*
+
 	if (_useTFR == 1) then {
    _this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
 	};
-*/
+
 };
 
 // ====================================================================================
@@ -85,11 +85,11 @@ if (_faction == "BLU_F") then {
 
 if (_faction == "BLU_G_F") then {
 #include "folk_assignGear_fia.sqf";
-/*
+
 	if (_useTFR == 1) then {
 		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
 	};
-*/
+
 };
 
 // ====================================================================================
@@ -100,11 +100,11 @@ if (_faction == "BLU_G_F") then {
 
 if (_faction == "OPF_F") then {
 #include "folk_assignGear_csat.sqf";
-/*
+
 	if (_useTFR == 1) then {
 		_this execVM "f\common\fa_TFR_assignGear_EAST.sqf";
 	};
-*/
+
 };
 
 // ====================================================================================
@@ -115,11 +115,11 @@ if (_faction == "OPF_F") then {
 
 if(_faction == "IND_F") then {
 #include "folk_assignGear_aaf.sqf";
-/*
+
 	if (_useTFR == 1) then {
 		_this execVM "f\common\fa_TFR_assignGear_GUER.sqf";
 	};
-*/
+
 };
 
 // ====================================================================================
@@ -130,11 +130,11 @@ if(_faction == "IND_F") then {
 
 if(_faction == "mas_usa_rang") then {
 #include "folk_assignGear_mas_usa_rang.sqf";
-/*
+
 	if (_useTFR == 1) then {
 		_this execVM "f\common\fa_TFR_assignGear_WEST.sqf";
 	};
-*/
+
 };
 
 // ====================================================================================
@@ -146,17 +146,6 @@ _useACRE = paramsArray select 2;
 
 if (_useACRE == 1) then {
 	_this execVM "f\common\fa_ACRE_assignGear.sqf";
-};
-
-// ====================================================================================
-// GEAR: TFR
-// The following block of code executes only if the TFR parameter is set to true; it
-// automatically includes a file which contains the appropriate equipment data.
-
-_useTFR = paramsArray select 3;
-
-if (_useTFR == 1) then {
-	_this execVM "f\common\fa_TFR_assignGear.sqf";
 };
 
 // ====================================================================================
@@ -187,15 +176,5 @@ _useACRE = paramsArray select 2;
 
 if (_useACRE == 1) then {
 _setFreqsHandle = _this execVM "f\common\fa_ACRE_setFrequencies.sqf";
-};
-// ====================================================================================
-
-// SET CUSTOM FREQUENCIES
-// For TvTs, both sides need to have seperated radio channels, for gameplay purposes.
-// This script adds a predetermined value (0.2, 0.4 or 0.6) to each radio frequency, depending on the player's side.
-_useTFR = paramsArray select 3;
-
-if (_useTFR == 1) then {
-_setFreqsHandle = _this execVM "f\common\fa_TFR_setFrequencies.sqf";
 };
 // ====================================================================================

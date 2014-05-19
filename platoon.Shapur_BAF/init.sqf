@@ -259,11 +259,13 @@ f_endSelected = -1;
 	{
 		player addItem "x39_morphine";
 	};
-
-//Compile UPSMON
-call compile preprocessFileLineNumbers "scripts\Init_UPSMON.sqf";
+	for [{_i=0}, {_i<1}, {_i=_i+1}] dp
+	{
+		player addItem "x39_earplugs";
+	};
+}
 
 //Load IgiLoad Script
 //null=[this] execVM "scripts\IgiLoad\IgiLoad.sqf";
 
- // tf_no_auto_long_range_radio = false
+// tf_no_auto_long_range_radio = false

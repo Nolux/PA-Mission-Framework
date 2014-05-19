@@ -106,9 +106,9 @@ switch (_unitfaction) do
  		["GrpNATO_T1",  7, "TANGO1", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_T2",  7, "TANGO2", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_T3",  7, "TANGO3", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W1",  7, "WHISKY1", "ColorOrange"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W2",  7, "WHISKY2", "ColorOrange"] spawn f_fnc_localGroupMarker;
- 		["GrpNATO_W3",  7, "WHISKY3", "ColorOrange"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W1",  7, "WHISKY1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W2",  7, "WHISKY2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpNATO_W3",  7, "WHISKY3", "ColorBlue"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_Z1",  7, "ZULU1", "ColorGreen"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_Z2",  7, "ZULU2", "ColorGreen"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_Z3",  7, "ZULU3", "ColorGreen"] spawn f_fnc_localGroupMarker;
