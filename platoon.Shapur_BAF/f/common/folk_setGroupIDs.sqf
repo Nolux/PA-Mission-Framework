@@ -5,7 +5,7 @@
 // GROUP IDs: BLUFOR > NATO
 //<<<<<<< HEAD
 
-=======
+//=======
 // Automatically assigns intelligible names to groups for chat
 
 //INF
