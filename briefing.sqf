@@ -36,15 +36,13 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 
 // ====================================================================================
 
-// BRIEFING: BLUFOR > NATO
+// BRIEFING: BLUFOR > NATO / USA
 // The following block of code executes only if the player is in a NATO slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-// ** This needs editing depending on the faction units used. Find faction names under the Config Viewer in-game, possible under 'cfg/factions'.
-// BLU_F is standard NATO.
-if (_unitfaction == "BLU_F") exitwith {
+if (_unitfaction in ["blu_f","mas_usa_rang") exitwith {
 
-#include "f\common\f_briefing_nato.sqf"
+#include "f\briefing\f_briefing_nato.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -55,15 +53,13 @@ if (_unitfaction == "BLU_F") exitwith {
 
 // ====================================================================================
 
-// BRIEFING: BLUFOR > FIA
+// BRIEFING: FIA
 // The following block of code executes only if the player is in a FIA slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-// ** This needs editing depending on the faction units used. Find faction names under the Config Viewer in-game, possible under 'cfg/factions'.
-// BLU_G_F is standard FIA.
-if (_unitfaction == "BLU_G_F") exitwith {
+if (_unitfaction in ["blu_g_f","ind_g_f","opf_g_f"]) exitwith {
 
-#include "f\common\f_briefing_fia.sqf"
+#include "f\briefing\f_briefing_fia.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -78,11 +74,9 @@ if (_unitfaction == "BLU_G_F") exitwith {
 // The following block of code executes only if the player is in a CSAT slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-// ** This needs editing depending on the faction units used. Find faction names under the Config Viewer in-game, possible under 'cfg/factions'.
-// OPF_F is standard CSAT.
-if (_unitfaction == "OPF_F") exitwith {
+if (_unitfaction == "opf_f") exitwith {
 
-#include "f\common\f_briefing_csat.sqf"
+#include "f\briefing\f_briefing_csat.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -96,11 +90,9 @@ if (_unitfaction == "OPF_F") exitwith {
 // The following block of code executes only if the player is in a AAF
 // slot; it automatically includes a file which contains the appropriate briefing data.
 
-// ** This needs editing depending on the faction units used. Find faction names under the Config Viewer in-game, possible under 'cfg/factions'.
-// IND_F is standard AAF.
-if (_unitfaction == "IND_F") exitwith {
+if (_unitfaction == "ind_f") exitwith {
 
-#include "f\common\f_briefing_aaf.sqf"
+#include "f\briefing\f_briefing_aaf.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -115,11 +107,9 @@ if (_unitfaction == "IND_F") exitwith {
 // The following block of code executes only if the player is in a CIVILIAN
 // slot; it automatically includes a file which contains the appropriate briefing data.
 
-// ** This needs editing depending on the faction units used. Find faction names under the Config Viewer in-game, possible under 'cfg/factions'.
-// CIV_F is standard Altis Civillians.
-if (_unitfaction == "CIV_F") exitwith {
+if (_unitfaction == "civ_f") exitwith {
 
-#include "f\common\f_briefing_civ.sqf"
+#include "f\briefing\f_briefing_civ.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
